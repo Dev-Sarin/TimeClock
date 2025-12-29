@@ -27,8 +27,6 @@ The app supports clock in / clock out, automatic rounding to 6-minute increments
 - Rounded hours and pay summary  
 - Simple, distraction-free design  
 
-(Screenshots can be added later)
-
 ---
 
 ## Tech Stack
@@ -42,47 +40,36 @@ The app supports clock in / clock out, automatic rounding to 6-minute increments
 
 ## Getting Started
 
-### 1. Clone the repository
-```bash
+1. Clone the repository
 git clone https://github.com/your-username/time-tracker-v2.git
 cd time-tracker-v2
+
+
 2. Create a virtual environment
-bash
-Copy code
 python -m venv venv
-Activate it:
+
+To Activate it:
 
 Windows
-
-bash
-Copy code
 venv\Scripts\activate
-macOS / Linux
 
-bash
-Copy code
+macOS / Linux
 source venv/bin/activate
+
 3. Install dependencies
-bash
-Copy code
 pip install PySide6
+
 4. Run the app
-bash
-Copy code
 python time_tracker_V2.py
+
 How Rounding Works
 Each punch is rounded individually
-
 Rounds to the nearest 6 minutes
-
 Uses half-up rounding
-
 Matches common payroll rounding standards
 
 Example:
-
 8 minutes rounds to 0.1 hours
-
 14 minutes rounds to 0.2 hours
 
 Data Storage
@@ -90,76 +77,47 @@ All punches are stored locally in:
 
 Copy code
 time_tracker_data.csv
-Format:
 
+Format:
 csv
 Copy code
 in_time,out_time
 2025-01-01T09:00:00,2025-01-01T17:02:00
+
 No cloud
-
 No tracking
-
 Easy to back up or import elsewhere
-
 Privacy and Offline Use
 Fully offline
-
 No telemetry
-
 No external services
-
 Data stays on the local machine
 
 Future Ideas
 Export summary reports
-
 Multiple employee profiles
-
 Manual punch editing
-
 Overtime rules
-
 PDF or Excel exports
 
 License
 This project is licensed under the GNU General Public License v3.0.
-
 You are free to:
-
 Use the software for any purpose
-
 Study how the software works and modify it
-
 Redistribute copies
-
 Distribute modified versions
 
 Under the condition that:
-
 Source code is disclosed
-
 Modifications are released under the same GPLv3 license
-
 See the LICENSE file for full details.
 
 Author
 Sarin Eskandarian
 Multi-disciplinary software developer and tool builder
-
 If you are looking for custom desktop tools, automation, or internal business software, feel free to reach out.
 
-yaml
-Copy code
-
----
-
-### Important sanity check (recommended)
-Make sure you also have:
-- A `LICENSE` file in the repo containing **GPL-3.0 text**
-- Optional header comment in `time_tracker_V2.py` like:
-
-```python
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, version 3.
